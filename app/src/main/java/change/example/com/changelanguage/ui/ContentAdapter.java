@@ -1,4 +1,4 @@
-package change.example.com.changelanguage;
+package change.example.com.changelanguage.ui;
 
 import android.content.Context;
 import android.support.v7.widget.AppCompatTextView;
@@ -9,6 +9,8 @@ import android.widget.BaseAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import change.example.com.changelanguage.R;
 
 public class ContentAdapter extends BaseAdapter {
 

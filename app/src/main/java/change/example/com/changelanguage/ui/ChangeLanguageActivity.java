@@ -1,23 +1,24 @@
-package change.example.com.changelanguage;
+package change.example.com.changelanguage.ui;
 
 import android.content.Context;
-import android.content.ContextWrapper;
-import android.os.Build;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Toast;
 
 import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.Locale;
+
+import change.example.com.changelanguage.LanguageUtil;
+import change.example.com.changelanguage.R;
 
 /**
  * @author HalyangDream
@@ -41,6 +42,7 @@ public class ChangeLanguageActivity extends AppCompatActivity implements View.On
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(newBase);
     }
+
 
     @Override
     protected void onDestroy() {
@@ -95,10 +97,13 @@ public class ChangeLanguageActivity extends AppCompatActivity implements View.On
     private void changeLanguage(String language) {
         Toast.makeText(this, "点击了" + language, Toast.LENGTH_SHORT).show();
         Locale locale = new Locale(language);
-        LanguageUtil.changeLanguage(this, locale);
+        Context context = LanguageUtil.changeLanguage(this, locale);
         Message message = new Message();
         message.what = CHAGE_SUCCESS;
         EventBus.getDefault().post(message);
         recreate();
     }
+
+
+
 }

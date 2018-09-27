@@ -44,6 +44,17 @@ public class LanguageUtil {
     }
 
     /**
+     * 更新界面
+     * @param context
+     * @return
+     */
+    public static Configuration updateConfiguration(Context context) {
+        Resources res = context.getResources();
+
+        return res.getConfiguration();
+    }
+
+    /**
      * 读取APP设置的语言
      *
      * @return

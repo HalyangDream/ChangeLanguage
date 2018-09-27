@@ -1,9 +1,7 @@
 package change.example.com.changelanguage;
 
 import android.content.Context;
-import android.content.ContextWrapper;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.Nullable;
@@ -11,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
@@ -20,7 +17,8 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-import java.util.Locale;
+import change.example.com.changelanguage.ui.ChangeLanguageActivity;
+import change.example.com.changelanguage.ui.ContentAdapter;
 
 
 /**

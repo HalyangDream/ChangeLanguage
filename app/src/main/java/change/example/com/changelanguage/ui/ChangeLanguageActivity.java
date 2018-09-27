@@ -65,7 +65,7 @@ public class ChangeLanguageActivity extends AppCompatActivity implements View.On
                 supportFinishAfterTransition();
             }
         });
-        toolbar.setTitle(R.string.content_ui);
+        toolbar.setTitle(R.string.change_language);
         //设置icon
 //    toolbar.setNavigationIcon(drawable);
     }

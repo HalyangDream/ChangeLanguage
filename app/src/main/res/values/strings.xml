@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ChangeLanguage</string>
+
+    <string name="content_ui">内容界面</string>
+    <string name="content_text">内容文字</string>
+
+    <string name="change_language">切换语言</string>
+
+    <string name="china">中文</string>
+    <string name="english">英文</string>
+    <string name="japan">日语</string>
+</resources>

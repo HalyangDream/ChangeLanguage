@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ChangeLanguage</string>
+
+    <string name="content_ui">コンテンツ・インタフェース</string>
+    <string name="content_text">もじ</string>
+
+    <string name="change_language">言語を切り替える</string>
+
+    <string name="china">クーバーペディ</string>
+    <string name="english">えいぶん</string>
+    <string name="japan">わぶん</string>
+</resources>

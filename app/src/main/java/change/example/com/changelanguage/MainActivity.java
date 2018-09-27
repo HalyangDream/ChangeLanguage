@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         });
         toolbar.setTitle(R.string.content_ui);
         //设置icon
-       //toolbar.setNavigationIcon(drawable);
+        //toolbar.setNavigationIcon(drawable);
     }
 
     private void initAdapter() {
